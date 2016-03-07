@@ -1,0 +1,11 @@
+<template>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+	<div>Current cash: ${money | numberFormat:'$0,0.00'}</div>
+	<div>Money earned per second: ${moneyPerSec | numberFormat:'$0,0.00'}</div>
+	<br />
+    <button class="btn btn-default" click.trigger="clicker()">Click me</button>
+	<button class="btn btn-default" click.trigger="buyathing()">Purchase a thingy (costs ${thingyCost | numberFormat:'$0,0.00'})</button>
+	<button class="btn btn-default" click.trigger="buyupgrade()">Upgrade your thingies (costs ${upgradeCost | numberFormat:'$0,0.00'})</button>
+  </section>
+</template>
